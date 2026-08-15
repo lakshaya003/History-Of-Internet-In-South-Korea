@@ -1,0 +1,22 @@
+{
+    "events": [
+        {
+            "year": "2000s",
+            "title": "Commercialization & Broadband Expansion",
+            "desc": "South Korea rose to prominence in internet speed and accessibility due to proactive government initiatives and wise investment decisions. Key projects included KREN (1994) linking universities, the Korea Information Infrastructure Project (1994) building nationwide fiber-optic networks, and Cyber Korea 21 (1999) promoting digital literacy and reducing the digital divide. By 2001, over 50% of households had broadband, exceeding 70% by 2004. DSL, cable, and fiber-optic networks expanded rapidly, and WiBro experiments introduced early wireless broadband.",
+            "image": "assets/2000s.png"
+        },
+        {
+            "year": "2010s",
+            "title": "Leadership in Mobile and Broadband",
+            "desc": "Smartphones, mobile apps like KakaoTalk, streaming platforms, and 4G LTE transformed daily life. Online gaming and digital entertainment flourished, with broadband supporting the explosive rise of multi-user PC games. The population embraced mobile-first services and digital culture, cementing Korea's leadership in connectivity.",
+            "image": "assets/2010s.png"
+        },
+        {
+            "year": "2020s",
+            "title": "5G Rollout and Next-Gen Connectivity",
+            "desc": "In April 2019, South Korea became the first country to launch commercial 5G nationwide with SK Telecom, KT, and LG Uplus, initially covering 85 cities and 34,000 base stations. Unique infrastructure-sharing policies and competition accelerated deployment. By Q3 2024, there were 36.11 million 5G subscribers. The South Korean government’s 5G+ Strategy aims to reach 90% 5G coverage across the country. They are expanding and further improving the 5G network to satisfy customer needs and demands, such as high-speed internet connections and lower prices of 5G mobile plans (GlobalData, June 2025). 5G enabled AR/VR, IoT, smart cities, and ultra-fast mobile internet, solidifying South Korea's global leadership.",
+            "image": "assets/2020s.png"
+        }
+    ]
+}
