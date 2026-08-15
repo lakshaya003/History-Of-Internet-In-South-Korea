@@ -1,0 +1,16 @@
+<script id="timeline-template" type="text/x-mustache-template">
+    <li class="timeline-item">
+      <div class="timeline-content">
+        <div class="card shadow-sm flex-grow-1 mr-3">
+          <div class="card-body">
+            <h5 class="card-title">{{year}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{title}}</h6>
+            <p class="card-text">{{desc}}</p>
+          </div>
+        </div>
+        <div class="image-box" style="width:150px; height:150px; background-image:url('{{image}}'); background-size:cover; background-position:center; border-radius:8px;"></div>
+      </div>
+    </li>
+  {{/events}}
+</script>
+

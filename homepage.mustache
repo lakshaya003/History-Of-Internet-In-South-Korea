@@ -1,0 +1,82 @@
+<!-- Homepage Mustache Template -->
+<script id="homepage-template" type="text/x-mustache-template">
+  <!-- Jumbotron -->
+  <header class="jumbotron text-center mb-4">
+    <div class="container">
+      <h1 class="display-4">{{siteTitle}}</h1>
+      <p class="lead">{{tagline}}</p>
+      <a href="timeline.html" class="btn btn-light btn-lg">Explore Timeline</a>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8">
+        <h2 class="mb-3">Introduction</h2>
+        <p class="lead">{{intro}}</p>
+      </div>
+      <div class="col-md-4">
+        <div class="card">
+          <img src="{{introImage.src}}" class="card-img-top" alt="{{introImage.title}}">
+          <div class="card-body">
+            <h5 class="card-title">{{introImage.title}}</h5>
+            <p class="card-text">{{introImage.description}}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Government Role Section -->
+<div class="container mt-5">
+  <h2>Role of Goverrnment in the success of South Korea's Internet</h2>
+  <p>{{govRole}}</p>
+</div>
+
+<!-- People’s Role Section -->
+<div class="container mt-4">
+  <h2>Role of Citizens in the success of South Korea's Internet</h2>
+  <p>{{peopleRole}}</p>
+</div>
+
+
+  <!-- Milestones Section -->
+  <section class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4">Key Milestones</h2>
+      <div class="row">
+        {{#milestones}}
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img src="{{img}}" class="card-img-top" alt="{{title}}">
+            <div class="card-body">
+              <h5 class="card-title">{{title}}</h5>
+              <p class="card-text">{{description}}</p>
+              <button class="btn btn-primary" data-toggle="modal" data-target="#modal{{index}}">Read More</button>
+            </div>
+          </div>
+        </div>
+        {{/milestones}}
+      </div>
+    </div>
+  </section>
+
+  <!-- Modals -->
+  {{#milestones}}
+  <div class="modal fade" id="modal{{index}}">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">{{title}}</h5>
+          <button class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">{{modal}}</div>
+      </div>
+    </div>
+  </div>
+  {{/milestones}}
+</script>
+
+<!-- Container where the rendered homepage will appear -->
+<div id="homepage-container"></div>

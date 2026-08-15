@@ -1,0 +1,33 @@
+{
+    "siteTitle": "History of Internet in South Korea",
+    "tagline": "From early 2000s broadband to today’s 5G leadership.",
+    "logo": "assets/skinternetlogo.jpeg",
+    "intro": "Internet refers to a global network of interconnected computer systems that enable people across the globe to communicate with each other, access and share resources online. They also enjoy services like email, web surfing to find information and entertainment through various social media platforms that have inevitably become part of our daily lives. South Korea has long been recognized as a global leader in internet connectivity and quality. Beginning in the early 2000s with widespread DSL and cable adoption, the country quickly advanced to fiber broadband and now leads the world in 5G rollout. Internet culture has also shaped society — from PC bangs (gaming cafés) to KakaoTalk and K-pop streaming.",
+    "introImage": {
+        "src": "assets/kilnamchon.jpeg",
+        "title": "Mr. Kilnam Chon",
+        "description": "Father of the Internet in South Korea and contributed to early network development."
+    },
+    "govRole": "The Korean government recognized early the importance of IT for economic competitiveness. Initiatives like KREN (1994), which connected research institutions, the Korea Information Infrastructure Project (1994), which expanded fiber-optic backbones, and Cyber Korea 21 (1999), which promoted digital literacy and reduced the digital divide, laid the groundwork for nationwide broadband access. Government leadership ensured that internet infrastructure reached both urban and rural communities.",
+    "peopleRole": "Citizens played an equally crucial role by embracing PC bangs, online gaming, and broadband services. Gaming cafés became cultural hubs, while households quickly adopted broadband with the help of subsidies. Online entertainment, communication, and e-commerce flourished. This enthusiastic adoption turned infrastructure into a vibrant digital culture, making South Korea the most connected society in the world by the early 2000s.",
+    "milestones": [
+        {
+            "img": "assets/2000s.png",
+            "title": "2000s: Broadband Surge",
+            "description": "DSL and cable spread rapidly, with KT and Hanaro leading.",
+            "modal": "South Korea rapidly adopted broadband technologies in the early 2000s. ISPs such as KT, Hanaro Telecom, Thrunet, and Dacom brought DSL and cable services nationwide, making Korea the world’s most connected society by mid-decade."
+        },
+        {
+            "img": "assets/2010s.png",
+            "title": "2010s: Smartphone Era",
+            "description": "KakaoTalk, streaming, and mobile broadband dominate.",
+            "modal": "With the rise of smartphones, South Korea embraced mobile-first services. KakaoTalk became the default messaging app, streaming platforms grew with K-pop, and LTE provided fast wireless internet to support on-the-go lifestyles."
+        },
+        {
+            "img": "assets/2020s.png",
+            "title": "2020s: 5G Rollout",
+            "description": "South Korea became the first country to launch nationwide 5G.",
+            "modal": "In 2019, South Korea launched the world’s first nationwide 5G network. This has enabled new industries such as AR/VR, IoT, and smart cities, reaffirming the country’s leadership in global internet innovation."
+        }
+    ]
+}

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Timeline of Internet in South Korea</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    .jumbotron {
+      background: linear-gradient(120deg, #722828, rgb(206, 206, 211), #253860);
+      color: white;
+    }
+
+    /* Timeline Styles */
+    .timeline {
+      position: relative;
+      margin-left: 10px;
+      padding: 2rem 0;
+      list-style: none;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 20px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: #000;
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 40px;
+      padding-left: 50px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: #000;
+    }
+
+    .timeline-content {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .timeline-content .card {
+      flex: 1 1 60%;
+      min-width: 280px;
+    }
+
+    .timeline-content .image-box {
+      flex: 1 1 35%;
+      min-width: 150px;
+      height: 200px;
+      border-radius: 8px;
+      background-size: cover;
+      background-position: center;
+    }
+
+    footer {
+      background: #f8f9fa;
+      padding: 20px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/mustache@latest/mustache.min.js"></script>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">
+      <img src="assets/skinternetlogo.jpeg" width="65" height="40" alt="SK Internet Logo">
+      SK Internet
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="timeline.html">Timeline</a></li>
+        <li class="nav-item"><a class="nav-link" href="isps.html">ISPs</a></li>
+        <li class="nav-item"><a class="nav-link active" href="usage.html">Internet Usage</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="jumbotron text-center mb-4">
+    <div class="container">
+      <h1 class="display-4">Timeline of Internet in South Korea</h1>
+      <p class="lead">Major milestones in the nation's internet history.</p>
+    </div>
+  </header>
+
+  <!-- Dynamic Timeline -->
+  <div class="container py-4">
+    <ul class="timeline" id="timeline-container">
+      <!-- Mustache will render here -->
+    </ul>
+  </div>
+
+  <!-- Mustache Template -->
+  <script id="timeline-template" type="text/x-mustache-template">
+    {{#events}}
+      <li class="timeline-item">
+        <div class="timeline-content">
+          <div class="card shadow-sm">
+            <div class="card-body">
+              <h5 class="card-title">{{year}}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{title}}</h6>
+              <p class="card-text">{{desc}}</p>
+            </div>
+          </div>
+          <div class="image-box" style="background-image:url('{{image}}');"></div>
+        </div>
+      </li>
+    {{/events}}
+  </script>
+
+  <!-- Back Button -->
+  <div class="text-center mt-3">
+    <a href="index.html" class="btn btn-secondary">Back Home</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 History of Internet in South Korea</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    async function renderTimeline() {
+      try {
+        const res = await fetch('timeline.json');
+        if (!res.ok) throw new Error('Failed to load timeline.json');
+        const data = await res.json();
+        const template = document.getElementById('timeline-template').innerHTML;
+        document.getElementById('timeline-container').innerHTML = Mustache.render(template, data);
+      } catch (err) {
+        console.error(err);
+        document.getElementById('timeline-container').innerHTML = '<p class="text-danger">Failed to load timeline data.</p>';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', renderTimeline);
+  </script>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
