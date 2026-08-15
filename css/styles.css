@@ -1,1 +1,151 @@
+:root {
+    --bg: #fff;
+    --fg: #000;
+}
 
+body {
+    background: var(--bg);
+    color: var(--fg);
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+/* Navbar */
+.wf-nav {
+    border-bottom: 1px solid var(--fg);
+    padding: 12px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wf-brand {
+    font-weight: bold;
+}
+
+.wf-links {
+    display: flex;
+    gap: 12px;
+}
+
+.wf-link {
+    text-decoration: none;
+    color: var(--fg);
+    border: 1px solid var(--fg);
+    padding: 4px 8px;
+}
+
+/* Mobile nav */
+.wf-toggle {
+    display: none;
+    font-size: 20px;
+    background: none;
+    border: 1px solid var(--fg);
+    padding: 4px 8px;
+}
+
+@media (max-width: 768px) {
+    .wf-links {
+        display: none;
+        flex-direction: column;
+        margin-top: 12px;
+    }
+
+    .wf-links.wf-show {
+        display: flex;
+    }
+
+    .wf-toggle {
+        display: block;
+    }
+}
+
+/* Header */
+.wf-hero {
+    border-bottom: 1px solid var(--fg);
+    text-align: center;
+    padding: 32px 16px;
+}
+
+.wf-hero h1 {
+    margin: 0 0 8px;
+}
+
+/* Timeline */
+.wf-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+.wf-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-left: 2px solid var(--fg);
+}
+
+.wf-item {
+    margin-bottom: 24px;
+    position: relative;
+    padding-left: 24px;
+}
+
+.wf-item::before {
+    content: "";
+    position: absolute;
+    left: -9px;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--fg);
+    background: var(--bg);
+    border-radius: 50%;
+}
+
+/* Card */
+.wf-card {
+    border: 1px solid var(--fg);
+    padding: 16px;
+}
+
+.wf-head {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.wf-year {
+    border: 1px solid var(--fg);
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.wf-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.wf-desc {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Make homepage intro text match Evolution section style */
+#homepage-container .lead {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    font-size: 1.25rem;
+    font-weight: 300;
+    /* lighter letters like Evolution section */
+}
+
+/* Footer */
+.wf-footer {
+    border-top: 1px solid var(--fg);
+    text-align: center;
+    padding: 16px;
+    font-size: 12px;
+}
