@@ -1,0 +1,117 @@
+{
+    "pageTitle": "Internet Usage in South Korea",
+    "tagline": "How South Koreans use the internet then vs today",
+    "overview": "Internet access in South Korea is among the highest in the world, with nearly universal broadband and 5G coverage. Citizens use it for communication, entertainment, work, online education, e-commerce, and social media. The widespread availability of high-speed internet has transformed daily life and digital culture.",
+    "image": {
+        "src": "assets/internet.png",
+        "title": "Internet in Daily Life",
+        "description": "South Koreans using high-speed internet across devices at home and in public spaces."
+    },
+    "activitiesEarly": [
+        {
+            "name": "Communication",
+            "description": "Email, instant messaging, and online forums were popular, with limited mobile access."
+        },
+        {
+            "name": "Entertainment",
+            "description": "Online gaming in PC bangs and downloading music were major leisure activities."
+        },
+        {
+            "name": "Education & Work",
+            "description": "Email and early web portals supported research and office tasks, with limited online courses."
+        },
+        {
+            "name": "E-commerce",
+            "description": "Early online shopping platforms appeared, but adoption was gradual due to trust and payment concerns."
+        },
+        {
+            "name": "Social Media",
+            "description": "Early social networks like Cyworld and blogging platforms were popular for sharing updates."
+        }
+    ],
+    "activitiesToday": [
+        {
+            "name": "Communication",
+            "description": "Messaging apps like KakaoTalk and email remain primary ways to communicate."
+        },
+        {
+            "name": "Entertainment",
+            "description": "Streaming services, online gaming, and K-pop content are widely consumed."
+        },
+        {
+            "name": "Education & Work",
+            "description": "Remote learning, webinars, and telecommuting have become common."
+        },
+        {
+            "name": "E-commerce",
+            "description": "Online shopping and digital payment platforms are part of daily transactions."
+        },
+        {
+            "name": "Social Media",
+            "description": "South Koreans are active on Instagram, Facebook, YouTube, and TikTok."
+        }
+    ],
+    "socialMediaEarly": [
+        {
+            "platform": "Cyworld",
+            "stats": "Dominant social network in early 2000s with millions of users sharing minihompy pages."
+        },
+        {
+            "platform": "Naver Blogs",
+            "stats": "Blogging was a primary way to share opinions and personal updates online."
+        },
+        {
+            "platform": "Instant Messaging (MSN, NateOn)",
+            "stats": "Primary communication tool among youth for chatting and file sharing."
+        }
+    ],
+    "socialMediaToday": [
+        {
+            "platform": "YouTube",
+            "stats": "Over 80% of internet users engage with YouTube content daily."
+        },
+        {
+            "platform": "KakaoTalk",
+            "stats": "Used by 95% of smartphone owners as primary messaging platform."
+        },
+        {
+            "platform": "Instagram",
+            "stats": "About 40% of social media users actively post or view content."
+        },
+        {
+            "platform": "Facebook",
+            "stats": "Roughly 30% of users engage regularly, mostly for groups and news."
+        },
+        {
+            "platform": "TikTok",
+            "stats": "Rapidly growing platform, popular among younger demographics."
+        }
+    ],
+    "socialMediaImage": {
+        "src": "assets/socialmedia.jpeg",
+        "title": "Social Media Usage",
+        "description": "South Koreans actively using popular social media platforms on smartphones and computers. On average, South Koreans spend 1 hour and 14 minutes daily on social media, utilizing an average of 4.4 different platforms "
+    },
+    "cyberSecurity": {
+        "early2000s": [
+            "Focus on antivirus software and firewalls for desktops.",
+            "Limited awareness of phishing and online scams.",
+            "Passwords were often simple, and two-factor authentication was uncommon.",
+            "Corporate networks used VPNs sparingly, mainly for large organizations."
+        ],
+        "today": [
+            "Strong cybersecurity awareness: Public campaigns and media coverage increased user knowledge.",
+            "Multi-factor authentication (MFA) is widely used for banking, government, and online services. This prevents unauthorized personnel from accessing accounts. Users are first authenticated via passwords or credentials and then authorized to access resources.",
+            "Advanced security software: Antivirus, anti-malware, firewalls, and automatic updates are standard.",
+            "Encrypted online services: HTTPS, SSL/TLS encryption, and secure payment systems are universal. Data is encrypted preventing hackers from accessing sensitive information like bank account details.",
+            "Active government monitoring: KISA actively monitors cyber threats, internet service issues, and traffic 24/7 year-round (KISA, 2021).",
+            "Cybercrime sophistication: Threats like ransomware, phishing, and DDoS attacks are more advanced but easier to mitigate due to improved security infrastructure.",
+            "Legislative measures: Strong cybersecurity laws, such as the Personal Information Protection Act (PIPA), enforce data protection."
+        ],
+        "image": {
+            "src": "assets/cybersecurity.jpeg",
+            "title": "Cybersecurity Awareness",
+            "description": "Users employing modern cybersecurity measures on devices and networks."
+        }
+    }
+}
