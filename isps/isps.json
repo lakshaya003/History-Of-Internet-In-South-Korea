@@ -1,1 +1,74 @@
-
+{
+    "evolution": "The early 2000s marked the revolution of ISPs in South Korea. Fierce competition between providers such as KT, Hanaro, Thrunet, and Dacom drove rapid innovation in speed, affordability, and service quality. This rivalry forced companies to upgrade infrastructure quickly, bringing fiber and high-speed DSL to millions of households. Today, major players like KT Corporation, SK Broadband, and LG Uplus continue this competition with fiber and 5G services, ensuring South Korea remains a global leader in internet connectivity.",
+    "isps": [
+        {
+            "name": "KT (Korea Telecom)",
+            "service": "DSL, Fiber",
+            "notes": "Formerly state-owned, largest telecom operator.\nLaunched DSL-based 'HiNet' service in the late 1990s.\nOffered nationwide broadband access and became the backbone ISP.",
+            "isEarly2000s": true
+        },
+        {
+            "name": "Hanaro Telecom",
+            "service": "DSL, Broadband",
+            "notes": "One of the earliest private ISPs.\nProvided DSL and broadband services to homes and businesses.\nFocused on offering competitive pricing and faster connections.",
+            "isEarly2000s": true
+        },
+        {
+            "name": "Thrunet",
+            "service": "DSL",
+            "notes": "Early private broadband provider specializing in DSL.\nTargeted urban residential markets.",
+            "isEarly2000s": true
+        },
+        {
+            "name": "Dacom",
+            "service": "DSL, Leased Lines",
+            "notes": "Initially focused on corporate and educational connections.\nOffered DSL and leased line services for business clients.",
+            "isEarly2000s": true
+        },
+        {
+            "name": "KT Corporation (Formerly Korea Telecom - 1981)",
+            "service": "DSL, Fiber, 5G, IPTV, Cloud",
+            "notes": "The biggest telecom operator and backbone supplier in South Korea. Maintains fiber-optic infrastructure nationwide, offering consumer and business networks.",
+            "isToday": true
+        },
+        {
+            "name": "SK Broadband (SKB)",
+            "service": "Fiber, Cable, IPTV, VoIP, Enterprise Solutions",
+            "notes": "Owned by SK Group, focuses on urban broadband and high-speed fiber connections. Collaborates with content suppliers for IPTV and streaming services.",
+            "isToday": true
+        },
+        {
+            "name": "LG Uplus",
+            "service": "Fiber, Mobile (4G/5G), IPTV, Cloud, IoT",
+            "notes": "Competes with KT and SKB, providing fiber-optic deployment, mobile broadband, and packaged services for residential and business clients.",
+            "isToday": true
+        }
+    ],
+    "eraComparison": [
+        {
+            "aspect": "Infrastructure",
+            "early2000s": "DSL and basic broadband networks",
+            "today": "Fiber-optic networks and 5G"
+        },
+        {
+            "aspect": "Competition",
+            "early2000s": "Mix of state-owned and emerging private ISPs.Due to presence of numerous ISPs, ISPs lowered prices for their subscription plans so as to attract more customers. Morever, government initiaives like subsidies for ISPs expand infrastructure without passing all costs to consumers.This is to encourage people to adopt digital literacy so as to boost the economy  ",
+            "today": "Large corporations dominate with advanced technology"
+        },
+        {
+            "aspect": "Services",
+            "early2000s": "Basic internet connectivity",
+            "today": "Bundled services like IPTV, cloud, mobile internet, enterprise solutions"
+        },
+        {
+            "aspect": "Speed & Coverage",
+            "early2000s": "Slower and limited",
+            "today": "Ultra-fast nationwide coverage"
+        },
+        {
+            "aspect": "Market Focus",
+            "early2000s": "Residential & small business",
+            "today": "Residential & enterprise clients with advanced packages"
+        }
+    ]
+}

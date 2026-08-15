@@ -1,0 +1,47 @@
+<script id="isps-template" type="text/x-mustache-template">
+  <!-- Evolution Section -->
+  <section class="mb-5">
+    <h2 class="mb-3">Evolution of ISPs</h2>
+    <p class="lead">{{evolution}}</p>
+  </section>
+
+  <!-- Early 2000s ISPs -->
+  <h3 class="mt-4">ISPs in the Early 2000s</h3>
+  {{#isps}}
+    {{#isEarly2000s}}
+    <div class="isp-entry card mb-3 p-3">
+      <h5>{{name}}</h5>
+      <p><strong>Service:</strong> {{service}}</p>
+      <p><strong>Notes:</strong> {{notes}}</p>
+    </div>
+    {{/isEarly2000s}}
+  {{/isps}}
+
+  <hr class="my-5">
+
+  <!-- Today's ISPs -->
+  <h3 class="mt-4">ISPs Today</h3>
+  {{#isps}}
+    {{#isToday}}
+    <div class="isp-entry card mb-3 p-3">
+      <h5>{{name}}</h5>
+      <p><strong>Service:</strong> {{service}}</p>
+      <p><strong>Notes:</strong> {{notes}}</p>
+    </div>
+    {{/isToday}}
+  {{/isps}}
+
+  <hr class="my-5">
+
+  <!-- Key Differences Between Eras -->
+  <section class="mb-5">
+    <h3 class="mt-4">Key Differences Between ISPs Early 2000s and Today</h3>
+    <ul class="list-group">
+      {{#eraComparison}}
+      <li class="list-group-item">
+        <strong>{{aspect}}:</strong> Early 2000s: {{early2000s}}; Today: {{today}}
+      </li>
+      {{/eraComparison}}
+    </ul>
+  </section>
+</script>
