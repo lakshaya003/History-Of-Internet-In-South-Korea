@@ -66,17 +66,12 @@ Navigate into the project:
 cd History-Of-Internet-In-South-Korea
 ```
 
-Because the website loads `homepage.json` using JavaScript `fetch()`, it should be run through a local web server rather than opened directly as a file.
+Start a local web server:
 
-For example, using Python:
-
-```bash
 python3 -m http.server 8000
-```
 
-Then open:
+Open the website in your browser:
 
-```text
 http://localhost:8000
 ```
 
