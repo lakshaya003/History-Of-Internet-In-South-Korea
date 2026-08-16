@@ -67,12 +67,12 @@ cd History-Of-Internet-In-South-Korea
 ```
 
 Start a local web server:
-
 ```bash
 python3 -m http.server 8000
 ```
-Open the website in your browser:
 
+Open the website in your browser:
+```bash
 http://localhost:8000
 ```
 
