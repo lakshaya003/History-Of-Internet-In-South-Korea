@@ -33,15 +33,30 @@ The homepage uses dynamic JSON data rendered with Mustache.js to display the sit
 
 ```text
 history-of-internet-in-south-korea/
-│
-├── index.html
-├── timeline.html
-├── isps.html
-├── usage.html
-├── homepage.json
+
 ├── assets/
-│   └── images and other website assets
-└── README.md
+│     └── images and other website assets
+├── css
+      └── styles.css
+├── js
+      └── app.js
+├── isps
+      └── isps.html
+      └── isps.json
+      └── isps.mustache
+├── timeline
+      └── timeline.html
+      └── timeline.json
+      └── timeline.mustache
+├── usage
+      └── usage.html
+      └── usage.json
+      └── usage.mustache
+├── README.md
+├── index.html
+├── homepage.json
+├── homepage.mustache
+├── validate.js
 ```
 
 ## How It Works
